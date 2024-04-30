@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+    <title>Form Data</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <form class="form-login">
+<input type="text" name="username" placeholder="Enter username" id="username">
+<br><br>
+<input type="number" name="age" placeholder="Enter age" id="age"><br><br>
+<input type="password" name="password" placeholder="Enter password" id="password">
+<br><br>
+<button  onclick="validate()"  type="submit">Submit</button>
+<br><br>
+    </form>
+    <table border="1" id="tableinfo"  class="table">
+        <tr >
+            <th>
+                Name
+            </th>
+            <th>age</th>
+            <th>Password</th>
+        </tr>
+        <tbody id="table-insert">
+
+        </tbody>
+    </table>
+    <script src="JS/script.js"></script>
+</body>
+</html>
