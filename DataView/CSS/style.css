@@ -1,0 +1,23 @@
+.error-message
+{
+    color: red;
+    font-size: 1rem;
+}
+#form
+{
+    display: block;
+   
+    padding: 3rem;
+    justify-content: center;
+   
+}
+
+#table{
+    display: none;
+}
+
+#userPicture
+{
+    width: 150;
+}
+
