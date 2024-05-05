@@ -1,0 +1,90 @@
+
+
+.book
+{
+    margin-left: 0;
+    color: blue;
+}
+.header
+{
+    border: 0.1rem solid black; 
+}
+.body
+{
+    
+    padding: 2rem;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    border: 0.1rem solid black; 
+}
+.footer
+{
+    border: 0.1rem solid black; 
+}
+.nav{
+    position: relative;
+    bottom: -0.6rem;
+    right: 1rem;
+    left: 1rem;
+}
+ul{
+    width: 100%;
+    display: flex;
+    list-style-type: none;
+   
+
+}
+td,tr{
+    text-align: left;
+}
+tr{
+    height: 2rem;
+}
+
+li{
+
+   padding: 0.4rem 0.8rem;
+   justify-content: center;
+}
+label
+{
+    font-weight: bold;
+}
+
+.image
+{
+    width: 35px;
+
+}
+button
+{
+    margin-right: 2rem;
+    width: 5rem;
+    padding: 0.3rem;
+}
+input
+{
+    margin-bottom: 0.5rem;
+    margin-left: 2.5rem;
+}
+.dataView
+{
+    text-align: left;
+    padding: 1rem;
+    
+
+
+}
+#formData
+{
+    display: block;
+} 
+#displayTable
+{
+     display: none; 
+}
+.show
+{
+    font-size: medium;
+    padding-left: 2rem;
+}

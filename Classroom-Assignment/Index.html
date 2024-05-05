@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Library Portal</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+
+    <div class="header">
+
+        <nav>
+            <ul>
+                <li><img class="image" src="Image/download.png" alt="logo"></li>
+                <li class="nav"> Library Portal</li>
+                <li class="book nav">Books</li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="body">
+
+        <div id="formData">
+            <form>
+                <table>
+                    <tr><td> <h3>Add New Book</h3></td></tr>
+                    <tr>
+                        <td><label for="category">Category</label></td>
+                        <td>
+                            <input type="text" name="Category" id="" value="IT" disabled>
+
+                            <!-- <select name="category" id="category" >
+                                <option name="category" value="IT" selected >IT</option>
+                                <option name="category" value="CSE">CSE</option>
+                                <option name="category" value="ECE">ECE</option>
+                                <option name="category" value="Mech">Mech</option>
+                            </select> -->
+                            <span id="Category-Error" class="errorMessage"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> <label for="bookName">Book</label></td>
+                        <td>
+                            <input type="text" id="bookName" onkeyup="validateBookName()">
+                            <span id="bookName-Error" class="errorMessage"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> <label for="authorEmail">Author Email</label></td>
+                        <td> <input type="text" id="authorEmail" onkeyup="validateAuthorEmail()">
+                            <span id="authorEmail-Error" class="errorMessage"></span>
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td> <label for="authorName">Author Name</label></td>
+                        <td> <input type="text" id="authorName" onkeyup="validateAuthorName()">
+                            <span id="authorName-Error" class="errorMessage"></span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td> <label for="published">Published</label></td>
+                        <td>
+                            <input type="text" id="published" onkeyup="validatePublishedYear()">
+                            <span id="published-Error" class="errorMessage"></span>
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td> <label for="price">Price</label></td>
+                        <td> <input type="text" id="price" onkeyup="validatePrice()">
+                            <span id="price-Error" class="errorMessage"></span>
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td> <button type="button" onclick="validateForm()">Save</button>
+                        </td>
+                        <td> <button type="reset">Cancel</button>
+                        </td>
+                        <td> <button type="button" onclick="showDetails()">Show</button><span id="submit-value"
+                                class="errorMessage"></span>
+                        </td>
+                    </tr>
+
+
+                </table>
+
+            </form>
+        </div>
+        <div id="displayTable">
+            <table class="dataView">
+                <h3>C++ Book Details</h3>
+                <tr>
+                    <th>Category</th>
+                    <td class="show">IT</td>
+                </tr>
+                <tr>
+                    <th>Book</th>
+                    <td  class="show" id="tdbookName"></td>
+                </tr>
+                <tr>
+                    <th>Author Email</th>
+                    <td class="show" id="tdauthorEmail"></td>
+                </tr>
+                <tr>
+                    <th>Author</th>
+                    <td class="show" id="tdauthor"></td>
+                </tr>
+                <tr>
+                    <th>Published</th>
+                    <td class="show" id="tdpublishedYear"></td>
+                </tr>
+                <tr>
+                    <th>Price</th>
+                    <td class="show" id="tdprice"></td>
+                </tr>
+            </table>
+        </div>
+        </td>
+        </tr>
+    </div>
+
+    <div class="footer">
+        <p>Copyright &copy; <span id="year"></span> - Present Syncfusion </p>
+    </div>
+
+    <script src="JS/script.js"></script>
+</body>
+
+</html
